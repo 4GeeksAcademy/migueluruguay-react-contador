@@ -1,9 +1,7 @@
 import React from "react";
-
-//include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
+import SecondsCounter from "./SecondsCounter"; // Importamos el nuevo componente
 
-//create your first component
 const Home = () => {
 	return (
 		<div className="text-center">
@@ -19,6 +17,7 @@ const Home = () => {
 				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
 				love!
 			</p>
+			<SecondsCounter seconds={0} /> {/* Aquí llamamos al componente con el prop seconds */}
 		</div>
 	);
 };
